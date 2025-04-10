@@ -43,12 +43,12 @@ squares.forEach((square) => {
     if (checkWin(currentPlayer)) {
       result.innerText = `${
         currentPlayer === players[0] ? "Player 1" : "Player 2"
-      } wins`;
+      } wins🎉`;
       return;
     }
     switchPlayer();
     if (checkTie()) {
-      result.innerText = "The game is tie!";
+      result.innerText = "The game is tie!💪";
       return;
     }
   });
@@ -82,7 +82,9 @@ const checkTie = function () {
 endBtn.addEventListener("click", function () {
   squares.forEach((square) => {
     square.innerText = "";
-    player1.style.backgroundColor = "#ff6347";
-    player2.style.backgroundColor = "#f0e68c";
   });
+  player1.style.backgroundColor = "#ff6347";
+  player2.style.backgroundColor = "#f0e68c";
+  result.innerText = "";
+  gameOver = false;
 });
