@@ -20,7 +20,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .board {
@@ -53,10 +53,13 @@ h1 {
   height: 150px;
   background-color: white;
   font-size: 150px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.square:hover {
+  background-color: #ffffc5;
+  cursor: pointer;
 }
 .btn {
   /* margin-top: 50px; */
